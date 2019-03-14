@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_03"
+    tools:context=".MainActivity">
+
+    <com.gigamole.library.PulseView
+        android:id="@+id/pulse"
+        android:layout_width="395dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="101dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pv_alpha="50"
+        app:pv_color="@color/common_google_signin_btn_text_dark_default"
+        app:pv_icon="@drawable/ic_pulse_for_pulse_library"
+        app:pv_interpolator="@android:anim/linear_interpolator"
+        app:pv_spawn_period="4000" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="101dp"
+        android:alpha="1"
+        android:background="@null"
+        android:onClick="start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pulse_animation" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="178dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/textViewMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="179dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="178dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMail" />
+
+    <TextView
+        android:id="@+id/textViewMarquee"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="78dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="                         Click button to start"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/buttonnn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="1"
+        android:background="@null"
+        android:onClick="buttonnn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_map_buttonn" />
+
+    <ImageButton
+        android:id="@+id/imageButtonWeather"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="1"
+        android:background="@null"
+        android:onClick="imageButtonWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_weather_conditions" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

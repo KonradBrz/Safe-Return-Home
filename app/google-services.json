@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "246132830501",
+    "firebase_url": "https://safereturnhomedatabase.firebaseio.com",
+    "project_id": "safereturnhomedatabase",
+    "storage_bucket": "safereturnhomedatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246132830501:android:b0a1d1c3195386fc",
+        "android_client_info": {
+          "package_name": "com.tashfaelapp.konrad.safereturnhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246132830501-a85n192u07429mj1ktt9fa7ujppgr0vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tashfaelapp.konrad.safereturnhome",
+            "certificate_hash": "c353058d293d55b1c76913ad618d8b8680c360e7"
+          }
+        },
+        {
+          "client_id": "246132830501-pcr6q7nmldr38sq3jc7qdctcdbtomc44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp4YE1I_JGm7pb5pMNixCigfd8QPeXoII"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246132830501-pcr6q7nmldr38sq3jc7qdctcdbtomc44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_03"
+    tools:context=".WeatherActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="25dp"
+        android:text="Data not available"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewCelsius"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_light"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="fill"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0"
+        app:columnCount="4"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="2">
+
+        <ImageView
+            android:id="@+id/imageViewAltitude"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_altitude" />
+
+        <ImageView
+            android:id="@+id/imageViewAccuracy"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_accuracy" />
+
+        <ImageView
+            android:id="@+id/imageViewHumidity"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_ahumidity" />
+
+        <ImageView
+            android:id="@+id/imageViewVisibility"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_avisibility" />
+
+        <TextView
+            android:id="@+id/textViewAltitude"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textViewAccuracy"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textViewVisibility"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="2">
+
+        <ImageView
+            android:id="@+id/imageViewWind"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_awind" />
+
+        <ImageView
+            android:id="@+id/imageViewSunrise"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_asunrise" />
+
+        <ImageView
+            android:id="@+id/imageViewSunset"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_asunset" />
+
+        <ImageView
+            android:id="@+id/imageViewPressure"
+            android:padding="3dp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/ic_apressure" />
+
+        <TextView
+            android:id="@+id/textViewWind"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textViewSunrise"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textViewSunset"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textViewPressure"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_rowWeight="1" />
+
+    </android.support.v7.widget.GridLayout>
+
+</android.support.constraint.ConstraintLayout>

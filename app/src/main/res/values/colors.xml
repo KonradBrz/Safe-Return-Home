@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2C95D2</color>
+    <color name="colorForGradient01">#00a1ff</color>
+    <color name="colorForGradient02">#0069a7</color>
+    <color name="colorForGradient03">#28a9f4</color>
+    <color name="colorForGradient04">#0e8ad2</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0969aa</color>
+    <color name="violet">#FF664FAF</color>
+    <color name="theme">#003f5b</color>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:clickable="true"
+    android:focusable="true"
+
+    tools:context=".Blank_Sms">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonFragment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="12dp"
+        android:alpha="0"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_tick_button" />
+
+    <EditText
+        android:id="@+id/editTextFragment"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/ic_pink_button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="add e-mail address"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFragmnet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarFragment"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFragmnet"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Set duration (minutes)"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

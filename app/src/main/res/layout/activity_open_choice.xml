@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/open_choice_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_02"
+    tools:context=".OpenChoiceActivity">
+
+    <!--<include-->
+        <!--android:id="@+id/include"-->
+        <!--layout="@layout/toolbar_layout" />-->
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/kenBurnsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/skyblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bcakground_choice_activity" />
+
+
+    <ImageView
+        android:id="@+id/imageViewSavedLocaions"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="@drawable/ripple_effect_oval"
+        android:onClick="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_saved_locations" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_container_email_sms">
+
+        <ImageButton
+            android:id="@+id/imageButtonPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_phone_buttonn" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:background="@null"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/ic_email_button" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container_email_sms"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageViewInfoIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:foreground="@drawable/ripple_effect_oval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_info_icon" />
+
+</android.support.constraint.ConstraintLayout>

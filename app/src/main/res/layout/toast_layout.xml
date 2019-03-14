@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_example_icon_narrow_background"
+    android:id="@+id/toast_root">
+
+    <ImageView
+        android:id="@+id/toastView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_info_icon" />
+
+    <TextView
+        android:id="@+id/toastText"
+        android:layout_width="171dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="If you are in the city you can choose network provider (sending via e-mail), and also gps provider (sending via sms). When you are outside the city borders better way will be use gps provider."
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/toastView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

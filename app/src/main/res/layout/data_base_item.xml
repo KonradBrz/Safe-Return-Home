@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="4dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorForGradient04"
+        android:foreground="@drawable/ripple_effect">
+
+        <ImageView
+            android:id="@+id/imageViewwwBase"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_checkicon"/>
+
+        <ImageView
+            android:id="@+id/imageViewMessengerIconBase"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:foreground="@drawable/ripple_effect_oval"
+            android:padding="1dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonBase"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_messenger_icon" />
+
+        <TextView
+            android:id="@+id/textViewBaseLatLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="137dp"
+            android:layout_marginEnd="196dp"
+            android:alpha="0"
+            android:text="line 1"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewwwBase"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewBase"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageViewwwBase"
+            android:gravity="center"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewwwBase"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/down_backgroundBase"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_example_icon_narrow_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewwwBase" />
+
+        <ImageView
+            android:id="@+id/downBase"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewwwBase"
+            app:srcCompat="@drawable/ic_example_item__arrow_down_black_24dp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewBase"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="@drawable/ic_example_icon_narrow_background"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/down_backgroundBase">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_example_icon_narrow_background"
+                app:columnCount="8"
+                app:orientation="horizontal"
+                app:rowCount="2">
+
+                <ImageView
+                    android:id="@+id/imageViewTemperatureBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_weather_conditions" />
+
+                <ImageView
+                    android:id="@+id/imageViewSpeedBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_aspeed" />
+
+                <ImageView
+                    android:id="@+id/imageViewAltitudeBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_altitude" />
+
+                <ImageView
+                    android:id="@+id/imageViewAccuracyBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_accuracy" />
+
+                <ImageView
+                    android:id="@+id/imageViewHumidityBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_ahumidity" />
+
+                <ImageView
+                    android:id="@+id/imageViewVisibilityBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_avisibility" />
+
+                <ImageView
+                    android:id="@+id/imageViewWindBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_awind" />
+
+                <ImageView
+                    android:id="@+id/imageViewPressureBase"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/down"
+                    app:srcCompat="@drawable/ic_apressure" />
+
+                <TextView
+                    android:id="@+id/textViewTemperatureBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewSpeedBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewAltitudeBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewAccuracyBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewHumidityBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewVisibilityBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewWindBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textViewPressureBase"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp" />
+            </android.support.v7.widget.GridLayout>
+        </HorizontalScrollView>
+
+        <ImageButton
+            android:id="@+id/imageButtonBase"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:foreground="@drawable/ripple_effect_oval"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>

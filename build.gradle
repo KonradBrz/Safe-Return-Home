@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.google.gms:google-services:4.0.1' //it's for firebase https://www.youtube.com/watch?v=YVu_xSzn2u0&list=PLGCjwl1RrtcTXrWuRTa59RyRmQ4OedWrt&index=2
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            //now u don't need to cast the parameters
+            url "https://maven.google.com"
+        }
+        maven {
+            //for pulse
+            url 'http://dl.bintray.com/gigamole/maven/'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
